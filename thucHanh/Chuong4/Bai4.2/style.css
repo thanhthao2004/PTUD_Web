@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.banner {
+    background-color: #666;
+    color: white;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.content-left {
+    width: 25%;
+    text-align: left;
+    padding: 20px;
+    background: #eee;
+    min-height: 600px;
+}
+.content-right {
+    width: 75%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 500px;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu h3 {
+    margin: 0;
+}
+.footer {
+    background-color: #666;
+    color: white;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
