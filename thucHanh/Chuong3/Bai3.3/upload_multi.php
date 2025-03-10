@@ -17,7 +17,7 @@
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         { 
-            for($i=0; $i<count($_FILES["files"]["name"]); $i++)
+            foreach ($_FILES["files"]["name"] as $i => $filename)
             {
                 echo '<div style="float:left; border:1px solid #c9c9c9; padding:10px; height: 300px; margin: 5px;">'; 
                 $name_new = pathinfo($_FILES["files"]["name"][$i], PATHINFO_FILENAME) . "_" . rand(100, 999);

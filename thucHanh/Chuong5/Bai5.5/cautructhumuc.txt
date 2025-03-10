@@ -1,0 +1,26 @@
+/project
+│── index.php        # Trang chủ, xử lý hướng điều hướng
+│── config.php       # Cấu hình cơ sở dữ liệu
+│── class
+│   ├── clsconnect.php  # Kết nối database
+│── layout
+│   ├── css/       # Chứa file .css
+│   ├── js/        # Chứa file .js
+│   ├── images/    # Chứa ảnh
+│   ├── header.php # Header chung
+│   ├── footer.php # Footer chung
+│── lib
+│   ├── helper.php  # Chứa hàm tiện ích
+│── modules
+│   ├── (các module riêng như hỗ trợ trực tuyến)
+│── pages
+│   ├── trangchu/
+│   │   ├── index.php  # Trang chủ
+│   ├── dangxuat/
+│   │   ├── index.php  # Đăng xuất
+│   ├── sanpham/
+│   │   ├── index.php  # Danh sách sản phẩm
+│   │   ├── chitietsanpham.php  # Chi tiết sản phẩm
+│   ├── error/
+│   │   ├── 404.php  # Trang lỗi 404
+│   │   ├── 403.php  # Trang lỗi 403
