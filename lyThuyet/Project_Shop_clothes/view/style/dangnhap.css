@@ -1,0 +1,103 @@
+/* Tổng thể */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4ec; /* Hồng nhạt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Khung form đăng nhập */
+.login-form {
+    background: #ffb6c1; /* Màu hồng pastel */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+/* Tiêu đề */
+h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Nhóm nhập liệu */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Ô input */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi focus vào input */
+.input-group input:focus {
+    border-color: #ff1493;
+    box-shadow: 0px 0px 8px rgba(255, 20, 147, 0.5);
+}
+
+/* Nhóm nút bấm */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Nút Đăng nhập */
+.btn-group input[type="submit"],
+.btn-group input[type="reset"] {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+/* Màu nút Đăng nhập */
+.btn-group input[type="submit"] {
+    background-color: #ff1493;
+}
+
+.btn-group input[type="submit"]:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+/* Màu nút Nhập lại */
+.btn-group input[type="reset"] {
+    background-color: #ff69b4;
+}
+
+.btn-group input[type="reset"]:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng mượt mà */
+* {
+    transition: all 0.3s ease-in-out;
+}

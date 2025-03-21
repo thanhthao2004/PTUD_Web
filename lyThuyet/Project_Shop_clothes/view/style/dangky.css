@@ -1,0 +1,93 @@
+/* Tổng thể */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe4ec; /* Hồng nhạt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Khung form đăng ký */
+.regis-form {
+    background: #ffb6c1; /* Màu hồng pastel */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Nhãn input */
+.input-from label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Ô input */
+.input-from input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi focus vào input */
+.input-from input:focus {
+    border-color: #ff1493;
+    box-shadow: 0px 0px 8px rgba(255, 20, 147, 0.5);
+}
+
+/* Nút bấm */
+.btn_regis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_regis button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Nút Đăng ký */
+.btn_regis button[name="btn_submit"] {
+    background-color: #ff1493;
+    color: white;
+}
+
+.btn_regis button[name="btn_submit"]:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+/* Nút Nhập lại */
+.btn_regis button[name="btn_reset"] {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.btn_regis button[name="btn_reset"]:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng mượt mà */
+* {
+    transition: all 0.3s ease-in-out;
+}

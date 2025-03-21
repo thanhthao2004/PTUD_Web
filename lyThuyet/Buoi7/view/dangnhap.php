@@ -10,7 +10,7 @@
         <h5>Dang nhap tai khoan</h5>
         Email: <input type="text" name="txtEmail"> <br>
         Password: <input type="password" name="txtPass"> <br>
-        <input type="submit" name="btn_Login" value="login">
+        <input type="submit" name=  "btn_Login" value="login">
         <input type="reset" value="reset">
     </form>
     <?php

@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.banner-website{
+    width: 100%;
+    height: 110px;
+    background-color: aquamarine;
+}
+.main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.container-left{
+    float: left;
+    width: 20%;
+    background-color: darkgray;
+}
+.container-right{
+    float: right;
+    width: 80%;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}

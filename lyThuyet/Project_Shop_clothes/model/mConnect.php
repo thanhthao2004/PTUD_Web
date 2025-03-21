@@ -3,12 +3,13 @@
         public function moketnoi(){
             $host = 'localhost';
             $user = 'thao';
-            $password = 'thao123@@';
+            $password = 'thao123';
             $db = 'shop_QA_Thao';
-            return mysqli_connect($host,$user,$password,$db);
+            $conn =  mysqli_connect($host,$user,$password,$db);
+            return $conn;
         }
         public function dongketnoi($conn){
-            $conn -> close();
+            $conn->close();
         }
     }
 ?>
