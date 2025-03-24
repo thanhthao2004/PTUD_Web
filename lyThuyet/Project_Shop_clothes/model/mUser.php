@@ -18,20 +18,27 @@
             $cn->dongketnoi($conn);
         }
         public function mRegis($tdn, $pw){
-            $str_Regis = "insert into User(UserName,Password) values('$tdn','$pw')";
-            $p = new mConnect();
-            $conn = $p->moketnoi();
-            if($conn){
-                $user_regis = $conn->query($str_Regis);
-                if($user_regis){
-                    return true;
+
+            try {
+                $str_Regis = "insert into USER(UserName,Password) values('$tdn','$pw')";
+                $p = new mConnect();
+                $conn = $p->moketnoi();
+                
+                if($conn){
+                    $user_regis = $conn->query($str_Regis);
+                    if($user_regis){
+                        return true;
+                    }else{
+                        return false;
+                    } 
                 }else{
                     return false;
-                } 
-            }else{
-                return false;
+                }
+                $p->dongKetnoi($conn);
+            } catch (Exception $e) {
+                echo 'Caught exception: ',  $e->getMessage(), "\n";
             }
-            $p->dongKetnoi($conn);
+
         }
     }
 ?>

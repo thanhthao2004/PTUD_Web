@@ -38,7 +38,7 @@
                 echo "<script>alert('Đăng ký thành công!');
                 setTimeout(()=>window.location.href='index.php',1000)</script>";
             }else{
-                echo "<script>alert('Sai thông tin đăng ký!');.'$tdn'.</script>";
+                echo "<script>alert('Sai thông tin đăng ký!');</script>";
             }
         }
     ?>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.banner img {
+    height: 300px;
+    width: 100%;
+}
+.header ul li{
+    display: inline;
+    margin-right: 10px;
+}
+#search{
+    margin-left: auto;
+}
+.content{
+    display: flex;
+    min-height: 300px;
+}
+.content-left{
+    flex: 2;
+}
+.content-right{
+    flex: 8;
+}
