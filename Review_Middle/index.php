@@ -12,9 +12,9 @@
     </div>
     <div class="header">
         <ul>
-            <li>Trang chủ | </li>
-            <li>| Đăng nhập |</li>
-            <li>| Đăng ký |</li>
+            <?php
+                include_once('menu.php');
+            ?>
             <input id="search" type="search" placeholder="Tìm kiếm sản phẩm">
         </ul>
     </div>
@@ -23,9 +23,14 @@
             <h4>Danh mục thương hiệu</h4>
         </div>
         <div class="content-right">
-            <h4>
-                Chào mừng bạn
-            </h4>
+            <?php
+                if(isset($_GET['page'])){
+                    $page  = $_GET['page'];
+                    include_once($page.'.php');
+                }else{
+                    echo "Chào mừng bạn!";
+                }
+            ?>
         </div>
     </div>
 </body>

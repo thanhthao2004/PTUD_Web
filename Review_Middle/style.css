@@ -19,11 +19,13 @@
 }
 .content{
     display: flex;
-    min-height: 300px;
+    min-height: 500px;
 }
 .content-left{
     flex: 2;
+    background-color:rgb(92, 90, 90)
 }
 .content-right{
     flex: 8;
+    background-color:rgb(141, 139, 139) ;
 }
